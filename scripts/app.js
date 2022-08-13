@@ -45,7 +45,7 @@ cityForm.addEventListener("submit", (e) => {
   e.preventDefault();
   const city = cityForm.city.value.trim();
   cityForm.reset();
-  cityForm.blur();
+  cityForm.city.blur();
 
   updateCity(city)
     .then((data) => updateUI(data))
